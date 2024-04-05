@@ -67,12 +67,12 @@ export default function HomePage() {
         </div>
 
         <div style={{ paddingLeft: '11rem', paddingRight: '1rem' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '2rem' }}>
           {bookData.map(item => (
             <div key={item.book_id} style={{ boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.1)', borderRadius: '3px', background: '#ffffff' }}>
               <div style={{ backgroundColor: '#f5f5f5', height: '55%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <img
-                  src="./book1.png"
+                  src={`./images/${item.logo}`}
                   alt="Book Cover"
                   id="book"
                   style={{ marginLeft: '25%', marginRight: '25%', height: '100%', objectFit: 'cover', cursor: 'pointer', transition: 'transform 0.5s' }}
